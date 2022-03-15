@@ -1,1 +1,12 @@
-<p>pokemon-list works!</p>
+ <section id="pokemon-list" class="pokemon-list">
+  <div class="flex-item" *ngFor="let pokemon of pokemons; let i = index;" (click)="showPokemonDetails(pokemon)">
+    <img src="{{pokemon.data?.sprites.other.home.front_default}}" width="100%" />
+    <h2>{{pokemon.name}}</h2>
+    <div class="item-meta">
+      <label>Height: {{pokemon.data?.height}}</label>
+      <label>Weight: {{pokemon.data?.weight}}</label>
+    </div>
+
+    <h3>Abilities</h3>
+  </div>
+</section>

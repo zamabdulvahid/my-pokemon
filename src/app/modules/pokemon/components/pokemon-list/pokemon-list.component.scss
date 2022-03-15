@@ -1,0 +1,41 @@
+.pokemon-list {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    .flex-item {
+      flex: 1 0 21%;
+      margin: 5px;
+      border: 1px solid #ebe8ee;
+      text-align: center;
+
+      h2 {
+        padding: 10px 0;
+      }
+
+      .item-meta {
+        border-top: 1px solid #ebe8ee;
+        border-bottom: 1px solid #ebe8ee;
+        padding: 5px 0;
+
+        label {
+          margin: 0 20px;
+        }
+      }
+
+
+
+    }
+}
+
+@media (max-width: 800px) {
+  .pokemon-list {
+    width: 500px;
+    flex-direction: column;
+  }
+}
